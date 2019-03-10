@@ -13,11 +13,11 @@
             padding: 0,
             position: 'absolute',
             top: 0,
-            direction: 'rtl',
+            direction: 'ltr',
             left: 0,
             background: 'none',
             color: '#ffffff',
-            'font-size': '24px',
+            'font-size': '28px',
             padding: '2px',
             height: '24px',
             width: '20px',
@@ -44,7 +44,7 @@
             pos = getPos(this);
             textLeft = pos[0] - imgPos[0];
             textTop = pos[1] - imgPos[1];
-            data.push({ 'text': this.val(), 'left': textLeft, 'top': textTop });
+            data.push({ 'text': this.val(), 'left': 691, 'top': 588  });
           });
           return data;
         }
@@ -78,7 +78,7 @@
             var textArea = $('<textarea></textarea>');
             textArea.css(text_css);
             position = mouseAbs(e);
-            textArea.css({'left': position[0], 'top': position[1]});
+            textArea.css({'left': 550, 'top': 720});
             $(this).after(textArea);        
             $(textArea).bind('keydown', resizeTextArea);
             $(textArea).on('paste', function(e) {
