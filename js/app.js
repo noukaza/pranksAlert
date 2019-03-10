@@ -14,6 +14,6 @@
         var canvasBlob = b64toBlob(realData, mimeType);
 
         // Generate file download
-         saveAs(canvasBlob, "yourwebsite_screenshot.png");
+         saveAs(canvasBlob, "noukaza.github.io/pranksAlert.png");
         });
     }
